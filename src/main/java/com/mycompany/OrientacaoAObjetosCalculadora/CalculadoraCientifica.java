@@ -8,6 +8,12 @@ package com.mycompany.OrientacaoAObjetosCalculadora;
  *
  * @author thagory.8187
  */
-public class CalculadoComum {
+public class CalculadoraCientifica extends Calculadora{
+    public Double raizQuadrada(Double a){
+        return Math.sqrt(a);
+    }
     
+    public Double potencia(Double a, Double b){
+        return Math.pow(a, b);
+    }
 }
