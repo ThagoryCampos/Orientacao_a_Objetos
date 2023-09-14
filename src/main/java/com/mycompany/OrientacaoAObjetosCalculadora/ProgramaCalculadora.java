@@ -15,10 +15,11 @@ public class ProgramaCalculadora {
     public static void main(String[] args) {
         Calculadora calculadora = new Calculadora();
         CalculadoraCientifica cc = new CalculadoraCientifica();
-        
+        CalculadoraMedia mediat = new CalculadoraMedia();
+                
         Scanner scanner = new Scanner(System.in);
         
-        //float soma, sub, mult, div, num1, num2;
+        float soma, sub, mult, div, num1, num2, num3;
         
         /*System.out.println("Informe o primeiro numero: ");
         float num1 = scanner.nextFloat();
@@ -49,9 +50,45 @@ public class ProgramaCalculadora {
         Double numPot = scanner.nextDouble();
         Double pow = cc.potencia(num, numPot);
         System.out.println(num + " elevado a " + numPot + " é: " + pow);
+        
+       
+        //MEDIA ARITMERICA
+        float media;
+        
+        System.out.println("Infome a primeira nota: ");
+        num1 = scanner.nextFloat();
+        
+        System.out.println("Infome a segunda nota: ");
+        num2 = scanner.nextFloat();
+        
+        System.out.println("Infome a terceira nota: ");
+        num3 = scanner.nextFloat();
+        
+        media = mediat.mediaAR(num1, num2, num3);
+        System.out.println("Resultado da media aritmetica: "  + media);
         */
+        float valor1 , valor2, valor3, peso1, peso2, peso3, media;
         
+        System.out.println("Informe a primeira nota: ");
+        valor1 = scanner.nextFloat();
         
+        System.out.println("Informe a primeira peso: ");
+        peso1 = scanner.nextFloat();
         
+        System.out.println("Informe a segunda nota: ");
+        valor2 = scanner.nextFloat();
+        
+        System.out.println("Informe a segundo peso: ");
+        peso2 = scanner.nextFloat();
+        
+        System.out.println("Informe a terceira nota: ");
+        valor3 = scanner.nextFloat();
+                
+        System.out.println("Informe a terceiro peso: ");
+        peso3 = scanner.nextFloat();
+        
+        media = mediat.mediaPond(valor1, valor2, valor3, peso1, peso2, peso3);
+        System.out.println("A media ponderada é: " + media);
+         
     }
 }
